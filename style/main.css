@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+body {
+background-color: rgba(255, 255, 255, 0.90);
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-direction: normal;
+}
+
+.profile-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20vw;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  margin-right: 20px;
+  background-color: #5176cd;
+  -webkit-box-shadow: 0px 3px 11px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 3px 11px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 15px;
+}
+
+.profile_avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  background: url("../assets/images/avatar.jpg");
+  background-size: cover;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+}
+
+
+.profile_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+    -ms-flex-align: left;
+        align-items: left;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.profile_info__name {
+  color: rgba(255, 255, 255, 0.90);
+  width: 200px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  margin: auto auto 5px auto;
+}
+
+.profile_info__text {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .profile_avatar {
+    margin: 0;
+  }
+  .profile_info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .profile_info__name {
+    margin-bottom: 5px;
+  }
+}
+
+.tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40vh;
+  margin: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.tasks_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 400px;
+  width: 90%;
+  height: 100%;
+  margin-left: 20px;
+  padding: 0 20px;
+  -webkit-box-shadow: 0px 3px 11px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 3px 11px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 15px;
+}
+
+.tasks_item__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.tasks_item__wrapper .wrapper_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 50px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.tasks_item__wrapper .wrapper_title > a {
+  color: black;
+  text-decoration: none;
+}
+
+.tasks_item__wrapper .wrapper_title > a:hover {
+  color: #ff8d0a;
+}
+
+.tasks_item__wrapper .wrapper_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tasks_item__wrapper .wrapper_info__task {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.tasks_item__wrapper .wrapper_info__task_disable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 60%;
+}
+
+.tasks_item__wrapper .wrapper_info__task  > img {
+  width: 120px;
+  height: 120px;
+}
+
+.tasks_item__wrapper .wrapper_info__task > p {
+  text-align: center;
+  font-weight: 400;
+}
+
+.tasks_item__wrapper .wrapper_info__task:hover > p {
+  color: #ff8d0a;
+}
+
+.tasks_item__wrapper .wrapper_info__task_disable  > img {
+  width: 120px;
+  height: 120px;
+}
+
+.tasks_item__wrapper .wrapper_info__task_disable > p {
+  text-align: center;
+  font-weight: 400;
+}
+
+
+@media (max-width: 768px) {
+  .tasks_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .tasks_item__wrapper .wrapper_title {
+    font-size: 20px;
+  }
+  .tasks_item__wrapper .wrapper_info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .tasks_item__wrapper .wrapper_title {
+    font-size: 19px;
+  }
+}
+
+.footer-panel {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 70px;
+  width: 100%;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+
+body {
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */
